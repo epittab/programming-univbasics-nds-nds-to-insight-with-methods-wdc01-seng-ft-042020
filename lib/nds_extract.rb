@@ -7,7 +7,7 @@ def gross_for_director(director_data)
 
   gross = 0
   
-  
+  pp(director_data)  
 
 
   return gross
