@@ -7,7 +7,7 @@ def gross_for_director(director_data)
 
   gross = 0
   
-  puts director_data.length
+  puts director_data.length()
 
   return gross
 end
