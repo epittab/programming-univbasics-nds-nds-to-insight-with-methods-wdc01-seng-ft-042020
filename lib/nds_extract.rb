@@ -5,6 +5,12 @@ require 'directors_database'
 # using director_data as input
 def gross_for_director(director_data)
 
+  gross = 0
+  
+  
+
+
+  return gross
 end
 
 # Write a method that, given an NDS creates a new Hash
@@ -13,5 +19,6 @@ end
 # { directorOne => allTheMoneyTheyMade, ... }
 def directors_totals(nds)
   result = {}
-  nil
+  
+  gross_for_director(nds)
 end
