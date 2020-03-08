@@ -5,7 +5,17 @@ require 'directors_database'
 # using director_data as input
 def gross_for_director(director_data)
 
+  directors = {}
   gross = 0
+  
+  count = 0
+  while (count < nds.length()) do
+    gross = gross_for_director(nds)
+    name = nds[count][:name]
+    directors[name] = gross
+    count += 1
+  end
+  
   
   puts director_data.length()
 
@@ -18,11 +28,6 @@ end
 # { directorOne => allTheMoneyTheyMade, ... }
 def directors_totals(nds)
   result = {}
-  count = 0
-  while (count < nds.length()) do
-    gross = gross_for_director(nds)
-    result[:] = gross
-    count += 1
-  end
+ 
   
 end
